@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+$primary-color:#EA3C12;
+$secondary-color:#EA9937;
+$accent-color:#EA9937;
+$background-color:#FFFFFF;
+$primary-font: 'Archivo Black', sans-serif;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
