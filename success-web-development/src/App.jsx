@@ -6,6 +6,7 @@ import WhatWeDo from "./components/pages/WhatWeDo";
 import OurProjects from "./components/pages/OurProjects";
 import Contact from "./components/pages/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route exact path="/projects" element={<OurProjects />} />
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
+        <Footer/>
+
       </div>
     </>
   );
