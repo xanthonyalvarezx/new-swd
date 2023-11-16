@@ -14,7 +14,7 @@ function Landing() {
             <div className="parallax_layer base_layer">BASE</div>
             <div className="parallax_layer mid_layer">
               <div className="parallax_text">
-              We bring your every Ideas to Life. <br /> Wether your design is for a single page application or a large multi-page website. <br /> We do it all, from prersonal blogs, to enterprise work. <br /> We'll make sure your vision <br /> becomes your product <br />one-hundred percent of the time.
+              We bring your every Idea to Life.  Wether your design is for a single page application or a large multi-page website. <br /> We do it all, from prersonal blogs, to enterprise work. <br /> We'll make sure your vision <br /> becomes your product <br />one-hundred percent of the time.
               </div>
             </div>
           </div>
