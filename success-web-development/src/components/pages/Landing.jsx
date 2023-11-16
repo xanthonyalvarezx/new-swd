@@ -5,12 +5,7 @@ function Landing() {
   return (
     <>
       <main>
-        <div className="section1">
-          <div className="text">PARALLAX</div>
-        </div>
-        <div className="section2">
-        <div className="text">PARALLAX</div>
-        </div>
+      <h1>Landing</h1>
       </main>
     </>
   );

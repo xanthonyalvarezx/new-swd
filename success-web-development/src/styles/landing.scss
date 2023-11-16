@@ -1,13 +1,137 @@
 @import "base-styles.scss";
 
 
-
-#nav-container{
-    background: linear-gradient(to right,#f0f4fe,#f0f4fe,#c7dbf4,#96bce3,);
-    filter: blur(50%);
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.section1{
+@mixin align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parallax_wrapper{
     height: 100vh;
-    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    .intro{
+        height: 100vh;
+        background: url(../assets/philadelphia.jpg);
+        background-size: cover;
+        @include align-center;
+        background-repeat: no-repeat;
+    }
+    .outro{
+        height: 100vh;
+        background:url('../assets/BFranklin_bridge.jpg');
+        @include align-center;
+    }
+    .parallax_group{
+        position: relative;
+        height: 100vh;
+        transform-style: preserve-3d;
+
+        .parallax_layer{
+            position: absolute;
+            inset: 0;
+            @include align-center;
+
+            }
+            .base_layer{
+                //scale = 1 + (Z trans value * -1) / initial perspective
+                transform: translateZ(-300px) scale(2.5)
+                
+        }
+        .mid_layer{
+            //scale = 1 + (Z trans value * -1) / initial perspective
+            transform: translateZ(185px) scale(0.4);
+            
+            
+        }
+        .mid_layer_2{
+            //scale = 1 + (Z trans value * -1) / initial perspective
+            transform: translateZ(50px) scale(1);
+    }
+    
+    }
+
+    #intro{
+        z-index: 0;
+        h1{
+            width: 100vw;
+            height: 10vh;
+            text-align: center;
+            background-color: color-mix(in srgb, #000000 40%, transparent 60%);
+            color: white;
+            font-family: $secondary-font;
+            padding-top: 2vh;
+            font-size: clamp(1rem, 2.5vw, 2rem);
+        }
+
+
+    }
+
+    #group-1{
+        z-index:-1;
+      
+
+    }
+
+    #group-1 > .base_layer{
+        background: url(../assets/wireframe-on-book.webp);
+        background-size: cover;
+        filter: opacity(80%);
+        filter: blur(2px);
+        
+    
+        
+        
+    }
+    #group-1 > .mid_layer > .parallax_text{
+    @include align-center();
+    text-align: center;
+      text-wrap: wrap;
+      background-color: color-mix(in srgb,  $accent-color 40%, transparent 60%);
+      width: 100vw;
+      height: 30vh;
+      font-weight: 700;
+      font-family: $secondary-font;
+      color: rgb(58, 58, 58);
+      font-size: clamp(.8rem, 1.5vw, 1.5rem);
+      margin-right: -2vw;
+    }
+
+    #group-2{
+
+    }
+    #group-2 > .mid_layer_2{
+        background:url('../assets/team2.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+
+    }
+    #group-2 > .mid_layer_2 > .parallax_text{
+        @include align-center();
+        text-align: center;
+          text-wrap: wrap;
+          background-color: color-mix(in srgb,  #000000 40%, transparent 60%);
+          color: white;
+          width: 100vw;
+          height: 30vh;
+          font-weight: 700;
+          font-family: $secondary-font;
+          font-size: clamp(.8rem, 1.5vw,1rem);
+       
+
+    }
+
+    #outro{
+
+    }
+
+
 }
