@@ -28,7 +28,11 @@ function Landing() {
           </div>
 
           <div id="outro" className="parallax_group outro">
-            END
+
+            <div>
+             <h1> We love what we do as much as we love our city.</h1>
+            </div>
+
           </div>
         </div>
       </main>
