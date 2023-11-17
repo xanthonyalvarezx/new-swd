@@ -27,8 +27,9 @@
     }
     .outro{
         height: 100vh;
-        background:url('../assets/BFranklin_bridge.jpg');
+        background:url('../assets/lovepark.jpg');
         @include align-center;
+        background-repeat: no-repeat;
     }
     .parallax_group{
         position: relative;
