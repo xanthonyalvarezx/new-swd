@@ -1,1 +1,62 @@
 @import "base-styles.scss";
+@mixin align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-container{
+height: 40vh;
+display: flex;
+justify-content: space-between;
+}
+
+.footer-div{
+    width: 20vw;
+    color: $secondary-color;
+    
+
+}
+
+#footer-logo{
+    height: 100%;
+    background: url("../assets/swd-favicon.png");
+    background-repeat: no-repeat;
+    background-size: 20vh;
+}
+
+.footer-link-list{
+    list-style-type: none;
+    line-height: 3vw;
+    margin-top:3vh
+}
+
+.footer-link{
+    font-family:$primary-font;
+    font-weight: 500;
+    font-size: clamp(.5rem, 1.2vw, 1.5rem);
+
+}
+#spacer-div{
+    border: 2px solid $secondary-color;
+    width: .1vw;
+    margin:3vh 0px;
+}
+#social-div{
+    @include align-center;
+}
+
+#follow-us-circle{
+    @include align-center;
+    border: 1px solid $secondary-color;
+    width: 5vw;
+    height: 5vw;
+    font-size: .5rem;
+    border-radius: 50%;
+    margin-left:-8vw;
+    font-size: clamp(.2rem, 1vw, 1rem);
+}
+#follow-us-circle:{
+   
+}
+
